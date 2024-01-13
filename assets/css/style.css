@@ -599,10 +599,21 @@ button {
 }
 
 .service-item__heading {
+    position: relative;
+    padding-left: 12px;
     color: #000958;
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1;
+}
+
+.service-item__heading::before {
+    position: absolute;
+    display: inline-block;
+    content: "";
+    inset: 0 auto 0 0;
+    width: 2px;
+    background: linear-gradient(#ff5b2e, #ffa187);
 }
 
 .service-item__desc {
