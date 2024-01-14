@@ -709,10 +709,16 @@ button {
 }
 
 .staff-item__img-wrap::after {
+    content: "";
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     bottom: 0;
+    width: calc(100% + 36px);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 100%;
 }
 
 .staff-item:nth-child(1) .staff-item__img-wrap::before {
@@ -720,7 +726,7 @@ button {
 }
 
 .staff-item:nth-child(1) .staff-item__img-wrap::after {
-    content: url(../img/staff-decor01.svg);
+    background-image: url(../img/staff-decor01.svg);
 }
 
 .staff-item:nth-child(2) .staff-item__img-wrap::before {
@@ -728,7 +734,7 @@ button {
 }
 
 .staff-item:nth-child(2) .staff-item__img-wrap::after {
-    content: url(../img/staff-decor02.svg);
+    background-image: url(../img/staff-decor02.svg);
 }
 
 .staff-item:nth-child(3) .staff-item__img-wrap::before {
@@ -736,7 +742,7 @@ button {
 }
 
 .staff-item:nth-child(3) .staff-item__img-wrap::after {
-    content: url(../img/staff-decor03.svg);
+    background-image: url(../img/staff-decor03.svg);
 }
 
 .staff-item:nth-child(4) .staff-item__img-wrap::before {
@@ -744,12 +750,11 @@ button {
 }
 
 .staff-item:nth-child(4) .staff-item__img-wrap::after {
-    content: url(../img/staff-decor04.svg);
+    background-image: url(../img/staff-decor04.svg);
 }
 
 .staff-item:nth-child(even) .staff-item__img-wrap::after {
-    bottom: auto;
-    top: 16px;
+    background-position: 0 16px;
 }
 
 .staff-item__img {
