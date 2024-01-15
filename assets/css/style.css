@@ -45,9 +45,9 @@ body {
     box-shadow: 4px 3px 10px -1px rgba(191, 41, 0, 0.4);
 }
 .btn--primary {
-    color: #fff;
-    background: var(--primary-color);
-    border-color: var(--primary-color);
+    color: #fff !important;
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
 }
 
 .btn:hover {
@@ -800,6 +800,10 @@ button {
     background: #fff6ed;
 }
 
+.pricing__container {
+    width: 994px;
+}
+
 .pricing__heading,
 .pricing__desc {
     text-align: center;
@@ -874,4 +878,72 @@ button {
     position: absolute;
     top: -10px;
     right: -112px;
+}
+
+.pricing__list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 44px;
+}
+
+.pricing-item {
+    padding: 30px 28px;
+    border-radius: 20px;
+    background: #fff;
+}
+
+.pricing-item__type {
+    color: #ff5b2e;
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
+.pricing-item__heading {
+    margin-top: 8px;
+    font-family: Sora;
+    color: #3f4065;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.pricing-item__price {
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora, sans-serif;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03;
+}
+
+.pricing-item__btn {
+    margin-top: 22px;
+    width: 100%;
+    background: transparent;
+    border-radius: 39px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: #ff5b2e;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+
+.pricing-item__item {
+    display: flex;
+    margin-top: 18px;
+    color: #656689;
+    font-size: 1.4rem;
+    line-height: 1;
+}
+
+.pricing-item__item::before {
+    content: url("../icons/price-check.svg");
+    margin-right: 12px;
+    top: 0;
+    left: 0;
 }
